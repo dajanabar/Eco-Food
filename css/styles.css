@@ -2,13 +2,18 @@
     margin: 0;
     padding: 0;
 
-    font-family: 'Montserrat', sans-serif;
     font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
     font-size: 16px;
-
 }
 h2{
     width: 100%;
+    font-size: 0.825rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 50px 0 10px 0;
 }
 a {
     text-decoration: none;
@@ -25,6 +30,9 @@ body {
     margin: 50px 10%;
     max-width: 1024px;
     padding: 60px 40px;
+}
+.button--wide{
+    width: 100%;
 }
 
 .button {
@@ -92,4 +100,50 @@ header > a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+}
+.products > article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.products > article > h3{
+    font-size: 1.755rem;;
+    font-weight: 500;
+    text-align: center;
+}
+.my-15{
+    margin: 15px 0;
+}
+.img-wrapper{
+    background-image: url(../img/empty-bg.jpg);
+}
+.img-wrapper > form{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 25%;
+    gap: 15px;
+}
+input[type="email"]{
+    padding: 4px;
+}
+.discount{
+    font-weight: 600;
+    color: white;
+    font-size: 1.5rem;
+}
+.discount > span{
+    text-transform: uppercase;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+footer > section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer > section > article{
+    width: 30%;
 }
