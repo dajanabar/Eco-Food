@@ -107,7 +107,7 @@ header > a{
     align-items: center;
     flex-direction: column;
 }
-.products > article > h3{
+h3{
     font-size: 1.755rem;;
     font-weight: 500;
     text-align: center;
@@ -143,7 +143,9 @@ footer > section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 15px;
 }
 footer > section > article{
-    width: 30%;
+    min-width: 100px;
+    max-width: 200px;
 }
