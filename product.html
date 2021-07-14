@@ -5,67 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecco Food</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+    <script defer src="js/jsButtons.js"></script>
+
+        
 </head>
 
 <body>
-    <header>
-        <a href="#"><img src="img/logo.png" alt="logo"></a>
-        <section>
-            <a href="№">Login</a>
-            <a href="#">Cart(<span>0</span>)</a>
-            <button>Clear cart</button>
-        </section>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Catalog</a>
-            <a href="#">About us</a>
-            <a href="#">Contact</a>
-        </nav>
-        <hr>
-    </header>
-    <main>
-        <button>Go back</button>
-        <section>
-            <h3>Lemon</h3>
-            <img src="img/lemon.jpg" alt="lemon">
-            <article>
-                <p>Base price $5.00</p>
-                <p>Base price for variant $5.00</p>
-                <p><b>Sales price</b></p>
-                <p><b>$4.75</b></p>
-                <button>Add to Cart</button>
-            </article>
-        </section>
-        <section>
-            <h3>Reviews</h3>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique beatae tempora magnam enim ullam qui
-                quidem quam mollitia, dolor iste, eius voluptatem eligendi saepe. Ratione ipsum quaerat sunt atque
-                provident.</p>
-        </section>
-    </main>
-    <footer>
-        <section>
-            <article>
-                <h3>Healing with Honey</h3>
-                <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
-            </article>
-            <article>
-                <h3>Honey for Your Body</h3>
-                <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
-            </article>
-            <article>
-                <h3>Honey Recipes</h3>
-                <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
-            </article>
-        </section>
-        <section>
-            <a href="#">f</a>
-            <a href="#">y</a>
-            <a href="#">i</a>
-        </section>
-        <p>&copy; All rights reserved.</p>
-    </footer>
+    <div class=" wrapper">
+        <header>
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+            <section>
+                <a href="#" class="button">Login</a>
+                <a href="#" class="link">Cart <i class="fas fa-shopping-basket"></i>(<span>0</span>)</a>
+                <button class="button">Clear cart</button>
+            </section>
+            <nav id="menuToggle">
+                <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+    
+                <ul id="menu">
+                    <li><a href="#" class="link">Home</a></li>
+                    <li><a href="#" class="link">Catalog</a></li>
+                    <li><a href="#" class="link">About us</a></li>
+                    <li><a href="#" class="link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <button id="jsGoBack">Go back</button>
+            <section>
+                <h3>Lemon</h3>
+                <img src="img/lemon.jpg" alt="lemon">
+                <article>
+                    <p>Base price $5.00</p>
+                    <p>Base price for variant $5.00</p>
+                    <p><b>Sales price</b></p>
+                    <p><b>$4.75</b></p>
+                    <button>Add to Cart</button>
+                </article>
+            </section>
+            <section>
+                <h3>Reviews</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique beatae tempora magnam enim ullam qui
+                    quidem quam mollitia, dolor iste, eius voluptatem eligendi saepe. Ratione ipsum quaerat sunt atque
+                    provident.</p>
+            </section>
+        </main>
+        <footer>
+            <hr/>
+            <section>
+                <article>
+                    <h3><i class="fas fa-cubes"></i>Healing with Honey</h3>
+                    <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
+                </article>
+                <article>
+                    <h3><i class="fas fa-tree"></i>Honey for Your Body</h3>
+                    <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
+                </article>
+                <article>
+                    <h3><i class="fab fa-codepen"></i>Honey Recipes</h3>
+                    <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
+                </article>
+            </section>
+            <section class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></i></a>
+            </section>
+            <p>&copy; All rights reserved.</p>
+        </footer>
+</div>
 
 </body>
 

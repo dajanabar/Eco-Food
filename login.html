@@ -5,60 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecco Food</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
+    <script defer src="../site Eco Food/js/jsButtons.js"></script>
+
+        
+
 </head>
 
 <body>
-    <header>
-        <a href="#"><img src="img/logo.png" alt="logo"></a>
-        <section>
-            <a href="#">Login</a>
-            <a href="#">Cart(<span>0</span>)</a>
-            <button>Clear cart</button>
-        </section>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Catalog</a>
-            <a href="#">About us</a>
-            <a href="#">Contact</a>
-        </nav>
-        <hr>
-    </header>
-    <main>
-        <a href="#">Go back</a>
-        <!-- глянути як можна прикріпити ссилку на свою головну сторінку до цієї кнопочки -->
-        <form action="#" method="POST">
-            <label for="name">User name *</label>
-            <input type="text" name="name" id="name" placeholder="User name" required>
-            <label for="pass">Password *</label>
-            <input type="password" name="pass" id="pass" required>
-            <label for="checkbox">Remember me</label>
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <input type="submit" value="Log in">
-        </form>
-        <hr>
-    </main>
-    <footer>
-        <section>
-            <article>
-                <h3>Healing with Honey</h3>
-                <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
-            </article>
-            <article>
-                <h3>Honey for Your Body</h3>
-                <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
-            </article>
-            <article>
-                <h3>Honey Recipes</h3>
-                <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
-            </article>
-        </section>
-        <section>
-            <a href="#">f</a>
-            <a href="#">y</a>
-            <a href="#">i</a>
-        </section>
-        <p>&copy; All rights reserved.</p>
-    </footer>
+    <div class=" wrapper">
+
+        <header>
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+            <section>
+                <a href="#" class="button">Login</a>
+                <a href="#" class="link">Cart <i class="fas fa-shopping-basket"></i>(<span>0</span>)</a>
+                <button class="button">Clear cart</button>
+            </section>
+            <nav id="menuToggle">
+                <!-- A fake / hidden checkbox is used as click reciever, so you can use the :checked selector on it. -->
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <ul id="menu">
+                    <li><a href="#" class="link">Home</a></li>
+                    <li><a href="#" class="link">Catalog</a></li>
+                    <li><a href="#" class="link">About us</a></li>
+                    <li><a href="#" class="link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <a href="#">Go back</a>
+            <!-- глянути як можна прикріпити ссилку на свою головну сторінку до цієї кнопочки -->
+            <form action="#" method="POST">
+                <label for="name">User name *</label>
+                <input type="text" name="name" id="name" placeholder="User name" required>
+                <label for="pass">Password *</label>
+                <input type="password" name="pass" id="pass" required>
+                <label for="checkbox">Remember me</label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <input type="submit" value="Log in">
+            </form>
+            <hr>
+        </main>
+        <footer>
+            <hr/>
+            <section>
+                <article>
+                    <h3><i class="fas fa-cubes"></i>Healing with Honey</h3>
+                    <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
+                </article>
+                <article>
+                    <h3><i class="fas fa-tree"></i>Honey for Your Body</h3>
+                    <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
+                </article>
+                <article>
+                    <h3><i class="fab fa-codepen"></i>Honey Recipes</h3>
+                    <p>Praesent vestiblum molestie lacus. Aenean nonummy hendrerit.</p>
+                </article>
+            </section>
+            <section class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></i></a>
+            </section>
+            <p>&copy; All rights reserved.</p>
+        </footer>
+    </div>
 
 </body>
 
